@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./imagens/game.png" type="imagens/png" />
+    <script src="./script/funcoes.js">
+      console.log(tempo());
+    </script>
+    <title>play</title>
+  </head>
+  <body onresize="dimensoes()">
+    <div class="painel">
+      <div class="vida">
+        <img id="vida1" src="./imagens/coracao_cheio.png" alt="" />
+        <img id="vida2" src="./imagens/coracao_cheio.png" alt="" />
+        <img id="vida3" src="./imagens/coracao_cheio.png" alt="" />
+      </div>
+      <div class="tempo">
+        Tempo restante : 00<span id="temporizador">:00</span>
+      </div>
+    </div>
+  </body>
+  <script>
+    /* fazedor de moscas */
+
+    let moscaMaker = setInterval(() => {
+      moscas();
+    }, tempo);
+
+    /* temporizador */
+    let aux = 59;
+    let temporizador = setInterval(() => {
+      if (aux == 0) {
+        clearInterval(temporizador);
+        clearInterval(moscaMaker);
+        gameOver();
+      }
+      if (aux < 10) {
+        document.getElementById("temporizador").innerText = ":0" + aux;
+      } else {
+        document.getElementById("temporizador").innerText = ":" + aux;
+      }
+      aux--;
+    }, 1000);
+  </script>
+</html>

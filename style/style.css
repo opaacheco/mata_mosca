@@ -1,0 +1,134 @@
+* {
+  cursor: url("../imagens/mata_mosca.png"), auto;
+}
+
+body {
+  background-image: url(../imagens/bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.mosca1 {
+  width: 50px;
+  height: 50px;
+}
+
+.mosca2 {
+  width: 70px;
+  height: 70px;
+}
+
+.mosca3 {
+  width: 90px;
+  height: 90px;
+}
+
+.mosca4 {
+  width: 110px;
+  height: 110px;
+}
+
+.painel {
+  bottom: 0;
+  position: absolute;
+  display: block;
+  padding: 20px;
+  margin: 20px;
+  background: #ffff;
+  opacity: 0.6;
+  width: 150px;
+  border: 1px solid black;
+}
+
+/* pagina game over */
+
+.main-gameover {
+  display: flex;
+  justify-content: center;
+}
+
+.block-gameover {
+  display: block;
+  padding: auto;
+}
+
+.botao-recomeçar {
+  margin: 0 30% 0 30%;
+  text-transform: uppercase;
+  font-family: var(--font-principal);
+  font-weight: 600;
+  border-radius: 5px;
+  width: 200px;
+  cursor: pointer;
+}
+
+/* pagina home */
+
+.main-home {
+  display: flex;
+  justify-content: center;
+}
+
+.block-home {
+  display: block;
+  justify-self: center;
+}
+
+.cursor {
+  cursor: auto;
+}
+
+.opcoes {
+  margin: 5% 41% 5% 41%;
+  font-size: 16px;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comeca-joga {
+  margin: 0 30% 0 30%;
+  background-color: red;
+  text-transform: uppercase;
+  font-family: var(--font-principal);
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* config page win leticia*/
+
+.win-leticia {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Adicione esta linha para centralizar verticalmente */
+}
+
+.main-leticia {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title-duk {
+  text-transform: uppercase;
+}
+
+.dukzin > img {
+  width: 600px;
+  height: 500px;
+}
+
+/* config page win */
+
+.vitoria {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}

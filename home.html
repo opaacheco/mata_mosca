@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./imagens/mosca.png" type="imagens/png" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./script/funcoes.js"></script>
+    <title>Mata Mosca</title>
+  </head>
+  <body class="cursor">
+    <div class="main-home cursor">
+      <div class="block-home cursor">
+        <div class="cursor">
+          <img class="cursor" src="./imagens/game.png" alt="" />
+        </div>
+        <div class="cursor">
+          <select class="cursor opcoes" name="dificuldade" id="dificuldade">
+            <option value="leticia">Letícia</option>
+            <option value="facil">facíl</option>
+            <option value="dificil">dificíl</option>
+          </select>
+        </div>
+        <div class="cursor">
+          <button class="comeca-joga cursor" onclick="abrirJogo()">
+            jogar
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function abrirJogo() {
+        let dificuldade = document.getElementById("dificuldade").value;
+        if (dificuldade == null) {
+          alert("você precisa selecionar uma dificuldade slc");
+        }
+        window.location.href = "App.html?" + dificuldade;
+      }
+    </script>
+  </body>
+</html>

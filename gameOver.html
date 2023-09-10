@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./imagens/game.png" type="imagens/png" />
+    <script>
+      function homePage() {
+        window.location.href = "home.html";
+      }
+    </script>
+    <title>Game Over</title>
+  </head>
+  <body onresize="dimensoes()" class="main-gameover">
+    <div class="block-gameover">
+      <div class="iamgem-gameover">
+        <img src="./imagens/game_over.png" alt="" />
+      </div>
+      <div class="botoes-gameover">
+        <button class="botao-recomeçar" onclick="homePage()">recomeçar</button>
+      </div>
+    </div>
+  </body>
+</html>
